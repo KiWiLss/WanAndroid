@@ -20,19 +20,19 @@
 #### 预览图
 
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2924c25abb79?w=1080&h=2248&f=png&s=316910)
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc29299920ae5f?w=1080&h=2248&f=png&s=189778)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2924c25abb79?w=590&h=1124&f=png&s=316910)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc29299920ae5f?w=590&h=1124&f=png&s=189778)
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293320a933d4?w=1080&h=2248&f=png&s=360912)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293320a933d4?w=590&h=1124&f=png&s=360912)
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2936847136ca?w=1080&h=2248&f=png&s=252046)
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc29391d499939?w=1080&h=2248&f=png&s=506999)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2936847136ca?w=590&h=1124&f=png&s=252046)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc29391d499939?w=590&h=1124&f=png&s=506999)
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293c4e0049c4?w=1080&h=2248&f=png&s=200617)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293c4e0049c4?w=590&h=1124&f=png&s=200617)
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293e94d1ebdb?w=1080&h=2248&f=png&s=154496)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc293e94d1ebdb?w=590&h=1124&f=png&s=154496)
 
-![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2941c81064f1?w=1080&h=2248&f=png&s=56935)
+![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2941c81064f1?w=590&h=1124&f=png&s=56935)
 
 #### API
 [WanAndroid API](https://www.wanandroid.com/blog/show/2)
