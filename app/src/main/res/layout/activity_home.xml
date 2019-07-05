@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_home_drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fitsSystemWindows="true">
+
+    <!--主界面-->
+    <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar_home_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_home_tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_scrollFlags="scroll|enterAlways|snap"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.kiwilss.lxkj.mvpretrofit.widget.NoScrollViewPager
+                android:id="@+id/vp_home_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"/>
+
+
+        <com.iammert.library.readablebottombar.ReadableBottomBar
+                android:id="@+id/rb_home_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:rbb_tabs="@xml/tabs"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                app:rbb_indicatorHeight="0dp"
+                app:rbb_activeItemType="icon"
+                app:rbb_textColor="@color/black2D"
+                app:elevation="@dimen/m10"
+                app:layout_behavior="com.kiwilss.lxkj.mvpretrofit.utils.behavior.BottomNavigationBehavior"
+               />
+
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_home_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:srcCompat="@drawable/ic_arrow_upward_white_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginBottom="@dimen/m60"
+                android:layout_marginRight="@dimen/m20"
+                app:layout_behavior="com.kiwilss.lxkj.mvpretrofit.utils.behavior.ScaleDownShowBehavior"
+        />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--抽屉内容-->
+
+        <android.support.design.widget.NavigationView
+                android:id="@+id/nv_home_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/white"
+                app:headerLayout="@layout/nav_header_main"
+                app:itemIconTint="@color/item_nav_color_tv"
+                app:itemTextColor="@color/item_nav_color_tv"
+                app:menu="@menu/nav_menu" >
+
+
+
+
+        </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

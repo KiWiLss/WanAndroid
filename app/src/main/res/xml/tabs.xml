@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+            drawable="@drawable/ic_home_black_24dp"
+            text="@string/home" />
+
+    <tab
+            drawable="@drawable/ic_apps_black_24dp"
+            text="@string/konwledge" />
+
+    <tab
+            drawable="@drawable/ic_wechat_black_24dp"
+            text="@string/wechat" />
+
+    <tab
+            drawable="@drawable/ic_navigation_black_24dp"
+            text="@string/navigation" />
+
+    <tab
+            drawable="@drawable/ic_project_black_24dp"
+            text="@string/project" />
+</tabs>

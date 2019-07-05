@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/main_home"
+          android:title="@string/home"
+          android:icon="@drawable/ic_home_black_24dp"
+          app:showAsAction="ifRoom"
+          android:enabled="true"/>
+
+    <item android:id="@+id/main_knowledge"
+          android:title="@string/konwledge"
+          android:icon="@drawable/ic_apps_black_24dp"
+          app:showAsAction="ifRoom"
+          android:enabled="true"/>
+
+    <item android:id="@+id/main_wechat"
+          android:title="@string/wechat"
+          android:icon="@drawable/ic_wechat_black_24dp"
+          app:showAsAction="ifRoom"
+          android:enabled="true"/>
+
+    <item android:id="@+id/main_navigation"
+          android:title="@string/navigation"
+          android:icon="@drawable/ic_navigation_black_24dp"
+          app:showAsAction="ifRoom"
+          android:enabled="true"/>
+
+    <item android:id="@+id/main_project"
+          android:title="@string/project"
+          android:icon="@drawable/ic_project_black_24dp"
+          app:showAsAction="ifRoom"
+          android:enabled="true"/>
+
+</menu>

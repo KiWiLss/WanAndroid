@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kiwilss.lxkj.mvpretrofit.widget.SwipeItemLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <!--正面展示内容-->
+
+    <RelativeLayout
+            android:id="@+id/rl_item_fg_todo_content"
+            android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground">
+
+        <com.kiwilss.lxkj.mvpretrofit.widget.TiltTextView
+                android:id="@+id/tv_item_fg_todo_tilt"
+                android:layout_width="@dimen/m24"
+                android:layout_height="@dimen/m24"
+                android:visibility="gone"
+                app:tiltBgColor="@color/red"
+                app:tiltLength="@dimen/m16"
+                app:tiltMode="left_top_triangle"
+                app:tiltText="@string/priority_1"
+                app:tiltTextSize="@dimen/m8"
+                 />
+
+        <TextView
+                android:id="@+id/tv_item_fg_todo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/m16"
+                android:paddingRight="@dimen/m16"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/m16" />
+
+        <TextView
+                android:id="@+id/tv_item_fg_todo_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_fg_todo_title"
+                android:layout_alignStart="@+id/tv_item_fg_todo_title"
+                android:layout_alignLeft="@+id/tv_item_fg_todo_title"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/m16"
+                android:paddingRight="@dimen/m16"
+                android:text="@string/app_name"
+                android:textColor="@color/gray75"
+                android:textSize="@dimen/m14" />
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="@dimen/m1"
+              android:background="@color/grayF8"
+              android:layout_alignParentBottom="true"
+              android:layout_marginStart="@dimen/m14"
+        />
+    </RelativeLayout>
+
+
+    <!--右滑展示内容-->
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/btn_item_fg_todo_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_done"
+                android:paddingLeft="@dimen/m6"
+                android:paddingRight="@dimen/m6"
+                android:text="@string/mark_done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/m12" />
+
+        <Button
+                android:id="@+id/btn_item_fg_todo_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_delete"
+                android:paddingLeft="@dimen/m6"
+                android:paddingRight="@dimen/m6"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+</com.kiwilss.lxkj.mvpretrofit.widget.SwipeItemLayout>

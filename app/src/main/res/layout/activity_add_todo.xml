@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white">
+
+    <include layout="@layout/currency_top"
+             android:id="@+id/include_add_todo_top"/>
+
+
+    <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_add_todo_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/m24"
+            android:layout_marginRight="@dimen/m24"
+            android:layout_marginBottom="@dimen/m25"
+            app:solid="@color/blue"
+            android:text="@string/save"
+            android:textSize="@dimen/m14"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:corner="@dimen/m4"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/include_add_todo_top"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/m16"
+                android:paddingRight="@dimen/m16">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title2"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16"/>
+
+            <EditText
+                    android:id="@+id/et_add_todo_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@null"
+                    android:hint="@string/compulsory"
+                    android:maxLines="1"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16"/>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:background="@color/graye0"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/m16"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16" />
+
+            <EditText
+                    android:id="@+id/et_add_todo_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/compulsory"
+                    android:inputType="text|textMultiLine"
+                    android:minHeight="@dimen/m100"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16" />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:background="@color/graye0" />
+
+        <LinearLayout
+                android:id="@+id/ll_add_todo_priority"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/m16"
+                android:paddingRight="@dimen/m16">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优先级："
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/sp_16" />
+
+            <RadioGroup
+                    android:id="@+id/rg_add_todo_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                        android:id="@+id/rb0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:checked="true"
+                        android:text="@string/priority_0" />
+
+                <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priority_1" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:background="@color/graye0" />
+
+        <LinearLayout
+                android:id="@+id/ll_add_todo_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/m16"
+                android:paddingRight="@dimen/m16">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16" />
+
+            <TextView
+                    android:id="@+id/tv_add_todo_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/m16"
+                    tools:text="2018-01-01" />
+
+            <ImageView
+                    android:id="@+id/iv_add_todo_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_arrow_right_24dp" tools:ignore="VectorDrawableCompat"/>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:background="@color/graye0" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

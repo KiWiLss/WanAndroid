@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tb_currency_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+>
+
+    <ImageView
+            android:id="@+id/iv_currency_top_back"
+            android:layout_width="@dimen/m24"
+            android:layout_height="@dimen/m24"
+            android:src="@drawable/arrow_back"
+            android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/m14"
+            android:tint="@color/white"
+            />
+
+    <TextView
+            android:id="@+id/tv_currency_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/m17"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+    android:singleLine="true"
+    />
+
+    <!--文字-->
+    <TextView
+            android:id="@+id/tv_currency_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/m14"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/m14"
+            android:visibility="gone"
+    />
+    <!--image-->
+    <ImageView
+            android:id="@+id/iv_currency_top_right"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/menu_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/m14"
+            android:tint="@color/white"
+    />
+
+</RelativeLayout>

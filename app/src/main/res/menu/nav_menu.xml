@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/main_collect"
+              android:title="@string/collection"
+              android:icon="@drawable/ic_like_not"/>
+
+
+        <item android:id="@+id/main_todo"
+              android:title="@string/todo_tool"
+              android:icon="@drawable/ic_todo_default_24dp"/>
+
+        <!--<item android:id="@+id/main_mode"-->
+              <!--android:title="@string/night_dark_mode"-->
+              <!--android:icon="@drawable/ic_night_24dp"/>-->
+
+        <item android:id="@+id/main_setting"
+              android:title="@string/set"
+              android:icon="@drawable/ic_setting_24dp"/>
+
+        <item android:id="@+id/main_about"
+              android:title="@string/about_us"
+              android:icon="@drawable/ic_about_us_white_24dp"/>
+
+        <item android:id="@+id/main_logout"
+              android:title="@string/exit"
+              android:icon="@drawable/ic_logout_white_24dp"/>
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+                android:id="@+id/top_login_title"
+                layout="@layout/currency_top"
+                 app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_login_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/m100"
+            android:src="@drawable/header"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/m60"
+    app:layout_constraintTop_toBottomOf="@+id/top_login_title"/>
+
+<android.support.design.widget.TextInputLayout
+        android:id="@+id/til_login_account"
+        style="@style/LoginTextInputLayout"
+        android:hint="@string/please_input_account"
+        app:layout_constraintTop_toBottomOf="@id/civ_login_header"
+        android:layout_marginTop="@dimen/m20"
+        tools:ignore="MissingConstraints">
+
+    <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_login_pwd"
+            style="@style/LoginTextInputLayout"
+            android:hint="@string/please_input_pwd"
+            app:layout_constraintTop_toBottomOf="@id/til_login_account"
+            android:layout_marginTop="@dimen/m20"
+            app:passwordToggleEnabled="true"
+            tools:ignore="MissingConstraints">
+
+        <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_login_login"
+          style="@style/LoginStv"
+            android:layout_marginTop="@dimen/m40"
+            app:layout_constraintTop_toBottomOf="@+id/til_login_pwd"
+            android:text="@string/login"
+            tools:ignore="MissingConstraints"/>
+
+    <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/no_account_to_register"
+            app:layout_constraintTop_toBottomOf="@+id/stv_login_login"
+            android:textSize="@dimen/m16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/m20"
+    />
+
+    <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_login_register"
+            style="@style/LoginStv"
+            android:layout_marginTop="@dimen/m20"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_register"
+            android:text="@string/register"
+            tools:ignore="MissingConstraints"/>
+
+</android.support.constraint.ConstraintLayout>

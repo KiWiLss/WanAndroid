@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:scrollbars="none">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/m14">
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/m8"
+                    android:text="@string/hot_search"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/m16" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tfl_search_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:max_select="0" />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m24">
+
+                <TextView
+                        android:id="@+id/tv_search_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="@dimen/m6"
+                        android:text="@string/clear_all"
+                        android:textColor="@color/gray94" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/history_search"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/m16" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_search_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/m12"
+                    />
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

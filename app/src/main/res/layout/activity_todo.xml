@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+        <com.kiwilss.lxkj.mvpretrofit.widget.NoScrollViewPager
+                android:id="@+id/vp_todo_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"/>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bnv_todo_navigation"
+            style="@style/Widget.Design.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:elevation="@dimen/m16"
+            app:itemIconTint="@drawable/nav_item_color_state"
+            app:itemTextColor="@drawable/nav_item_color_state"
+            app:layout_behavior="com.kiwilss.lxkj.mvpretrofit.utils.behavior.BottomNavigationBehavior"
+            app:menu="@menu/bottom_navigation_todo" />
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_todo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/m20"
+            android:layout_marginRight="@dimen/m20"
+            android:layout_marginBottom="@dimen/m60"
+            app:layout_behavior="com.kiwilss.lxkj.mvpretrofit.utils.behavior.ScrollAwareFABBehavior"
+            app:srcCompat="@drawable/ic_add_24dp" tools:ignore="VectorDrawableCompat"/>
+</android.support.design.widget.CoordinatorLayout>
