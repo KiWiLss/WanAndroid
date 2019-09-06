@@ -13,6 +13,8 @@ package com.kiwilss.lxkj.mvpretrofit.ui.home
 
 import android.annotation.SuppressLint
 import android.arch.lifecycle.Observer
+
+
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -44,6 +46,7 @@ import com.kiwilss.lxkj.mylibrary.core.sp
 import com.kiwilss.lxkj.mylibrary.core.startActivity
 import com.lxj.xpopup.XPopup
 import kotlinx.android.synthetic.main.activity_home.*
+
 
 /**
  *@FileName: HomeActivity
@@ -82,6 +85,7 @@ class HomeActivity: BaseActivity<HomePresenter>() {
             //当前显示的 fragment界面滚动到顶部
             LiveDataBus.with<Boolean>(KEY_HOME_TOP+vp_home_vp.currentItem.toString()).setValue(true)
         }
+
 
     }
 

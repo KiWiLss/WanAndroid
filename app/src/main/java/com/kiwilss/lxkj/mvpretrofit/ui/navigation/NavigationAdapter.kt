@@ -42,6 +42,7 @@ class NavigationAdapter(layoutId: Int = R.layout.item_navigation)
 
         val artData = item?.articles
         if (artData.isNullOrEmpty()) return
+
         val navigationTagAdapter = NavigationTagAdapter(mContext, artData)
         tfl!!.adapter = navigationTagAdapter
         tfl.setOnTagClickListener { view, position, parent ->

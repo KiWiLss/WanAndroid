@@ -60,8 +60,16 @@
 #### 下载体验
 
 1. [点击直接下载](http://oss.pgyer.com/4955b1cd485e76d8cab03d8091bd081f.apk?auth_key=1562340100-78016de17becac3ff2f617a67d973a25-0-a58d74f0666461821e95eac8ad0b597a&response-content-disposition=attachment%3B+filename%3Dapp-release.apk)
+
  2. 扫描下方二维码下载
+
 ![](https://user-gold-cdn.xitu.io/2019/7/5/16bc2a6fcbc27684?w=210&h=210&f=png&s=8669)
+
+3.另一个版本的玩安卓,功能更多一点,下载体验
+
+[直接下载](https://www.pgyer.com/b3S1)
+
+
 
 ```
 Copyright 2019 kiwilss

@@ -28,6 +28,7 @@ import com.kiwilss.lxkj.mvpretrofit.widget.TiltTextView
  */
 class ToDoFgAdapter(layoutId: Int,layHeaderId: Int,data: MutableList<TodoDataBean>)
     : BaseSectionQuickAdapter<TodoDataBean,BaseViewHolder>(layoutId,layHeaderId,data) {
+
     override fun convertHead(helper: BaseViewHolder?, item: TodoDataBean?) {
         helper ?: return
         item ?: return

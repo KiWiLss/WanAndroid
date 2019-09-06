@@ -77,7 +77,7 @@ abstract class PagerLazyFragment<T: BasePresenter>: Fragment(){
     abstract fun getErrorKey(): String
 
     private fun lazyInit() {
-        if (mRootView!=null && userVisibleHint && !isInit ) {
+        if (mRootView != null && userVisibleHint && !isInit ) {
             isInit = true
             initInterface()
             initData()

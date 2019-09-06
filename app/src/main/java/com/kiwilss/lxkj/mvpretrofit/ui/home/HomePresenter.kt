@@ -11,6 +11,7 @@
 
 package com.kiwilss.lxkj.mvpretrofit.ui.home
 
+import android.arch.lifecycle.MutableLiveData
 import com.kiwilss.lxkj.mvpretrofit.base.BasePresenter
 import com.kiwilss.lxkj.mvpretrofit.config.*
 
@@ -26,6 +27,7 @@ import kotlinx.coroutines.launch
  */
 class HomePresenter: BasePresenter() {
 
+    val mTest = MutableLiveData<Any>()
     //--------------HomeFg----------------
     fun getHomeArticles(page: Int){
         presenterScope.launch {

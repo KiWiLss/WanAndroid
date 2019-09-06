@@ -252,4 +252,5 @@ class ToDoFragment : PagerLazyFragment<ToDoPresenter>()
             }
         }
     }
+
 }

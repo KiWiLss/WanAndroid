@@ -76,6 +76,7 @@ abstract class BasePresenter {
             }
         }catch (e: Exception){
             LogUtils.e(e.toString())
+
             if (!NetworkUtils.isAvailableByPing()){//网络有问题
                 LiveDataBus.with<String>(errorKey).setValue("网络异常")
             }else{//其他问题

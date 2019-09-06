@@ -48,7 +48,8 @@ class ProjectFg: PagerLazyFragment<ProjectFgPresenter>() {
 
     override fun initInterface() {
         //获取返回的数据结果
-        LiveDataBus.with<List<ProjectFgBean>>(KEY_FG_PROJECT_DATA).observe(this, Observer {
+        LiveDataBus.with<List<ProjectFgBean>>(KEY_FG_PROJECT_DATA).observe(this,
+            Observer {
             dismissLoadingDiloag()
             it?.run {
                 initFragment(this)
