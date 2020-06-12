@@ -3,7 +3,7 @@
 
 
 #### 前言
-最近刚刚学会 Kotlin，于是趁着有空就用 Kotlin 做了一个小项目，来熟悉一下 Kotlin 语言。。项目地址 [WanAndroid](https://github.com/KiWiLss/WanAndroid/tree/master)，采用了Mvp + Retrofit + Kotlin + LiveData + 协程，仅用于学习交流，如有任何疑问和建议请提 Issues 或联系 qq： 1771050446。
+项目地址 [WanAndroid](https://github.com/KiWiLss/WanAndroid/tree/master)，采用了Mvp + Retrofit + Kotlin + LiveData + 协程，仅用于学习交流，如有任何疑问和建议请提 Issues 或联系 qq： 1771050446。
 
 开源不易，如果喜欢的话希望给个 Star 或 Fork ^_^ ，谢谢
 
